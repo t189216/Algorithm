@@ -4,9 +4,9 @@ class Solution {
         int sum = 0;
         int pow = 1;
         
-        for (int i = 0; i < num_list.length; i++) {
-            sum += num_list[i];
-            pow *= num_list[i];
+        for (int i : num_list) {
+            sum += i;
+            pow *= i;
         }
         
         answer = pow < (int)Math.pow(sum, 2) ? 1 : 0;
